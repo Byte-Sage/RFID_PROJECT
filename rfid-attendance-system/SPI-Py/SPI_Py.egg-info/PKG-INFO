@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: SPI-Py
+Version: 1.0.1
+Summary: SPI-Py: Hardware SPI as a C Extension for Python by Louis Thiery, adapted to work with MFRC522 under Raspbian Jessie by Maurice Fahn.
+Home-page: https://github.com/mab5vot9us9a/SPI-Py
+Download-URL: https://github.com/mab5vot9us9a/SPI-Py/archive/master.zip
+Author: Louis Thiery (Original), Maurice Fahn (Adaptions)
+License: GPL-v2
+Platform: Linux
