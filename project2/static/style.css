@@ -1,0 +1,61 @@
+body {
+    background-color: #F2F2F2;
+    padding-top: 70px;
+}
+
+.navbar {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#headingGrp {
+    margin-top: 5rem;
+}
+
+#headingGrp h1 {
+    font-size: 3rem;
+    color: #023047;
+}
+
+#headingGrp h2 {
+    font-size: 1.5rem;
+    color: #023047;
+}
+
+.background-image {
+    background-color: #8ecae6;
+    height: 100px;
+}
+
+.container {
+    margin-top: 3rem;
+}
+
+.attendance-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.attendance-list li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #023047;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    #headingGrp h1 {
+        font-size: 2rem;
+    }
+
+    #headingGrp h2 {
+        font-size: 1rem;
+    }
+
+    .attendance-list li {
+        font-size: 1rem;
+    }
+}
