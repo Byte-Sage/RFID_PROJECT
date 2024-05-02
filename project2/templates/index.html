@@ -51,6 +51,26 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="accordion-body">
+            <h1 class="display-4">Email Info</h1>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr class="table-dark">
+                        <th>Registration Number</th>
+                        <th>Date</th>
+                    </tr >
+                </thead>
+                <tbody>
+                    {% for record in email_info %}
+                    <tr class="table-dark">
+                        <td class="table-dark">{{ record[0] }}</td>
+                        <td class="table-dark">{{ record[1] }}</td>
+                    </tr >
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
       </div>
     </div>
   </div>

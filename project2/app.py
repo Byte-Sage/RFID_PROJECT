@@ -16,9 +16,11 @@ def index():
     print(attendance_records)
 
     # Close the database connection
+    cursor.execute("SELECT * from info")
+    email_info = cursor.fetchall()
     conn.close()
 
-    return render_template('index.html', attendance_records=attendance_records)
+    return render_template('index.html', attendance_records=attendance_records, email_info=email_info)
 
 if __name__ == '__main__':
     app.run()
