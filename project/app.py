@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import sqlite3
+import subprocess
 
 app = Flask(__name__)
 
@@ -33,6 +34,9 @@ def get_attendance():
     # Calculate percentage attendance
     percentage_attendance = (total_attendance /5) * 100
 
+    if percentage_attendance < 75:
+            subprocess.run(["python", "send.py", regno])
+        
     # Format present on required date
     present_status = "Present" if present_on_required_date>0 else "Absent"
 
